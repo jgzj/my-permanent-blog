@@ -1,0 +1,41 @@
+baseURL = 'https://your-blog.pages.dev/'
+languageCode = 'zh-cn'
+title = '我的个人博客'
+theme = 'PaperMod'
+
+[params]
+  description = '个人技术博客'
+  keywords = ['博客', '技术', '个人']
+  images = ['images/og-image.png']
+  author = '博主'
+  
+  # 社交链接
+  [[params.socialIcons]]
+    name = 'github'
+    url = 'https://github.com/your-username'
+  
+  # 导航菜单
+  [[menu.main]]
+    name = '首页'
+    url = '/'
+    weight = 1
+  [[menu.main]]
+    name = '文章'
+    url = '/posts/'
+    weight = 2
+  [[menu.main]]
+    name = '关于'
+    url = '/about/'
+    weight = 3
+
+[params.assets]
+  disableHLJS = false
+
+[params.homeInfoParams]
+  Title = '欢迎来到我的博客'
+  Content = '这里记录我的技术思考和学习笔记'
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
